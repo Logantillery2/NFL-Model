@@ -140,8 +140,8 @@ def run_pipeline(raw_path: Path, out_dir: Path, schema_path: Path) -> None:
 if __name__ == "__main__":
 
     run_pipeline(
-        raw_path=ROOT / "scripts" / "data" / "raw" / "teams_raw.csv",
-        out_dir=ROOT / "data",
-        schema_path=ROOT / "scripts" / "schemas" / "teams_schema.json",
+        raw_path=Path("data/raw/teams_raw.csv"),
+        out_dir=Path("data"),
+        schema_path=Path("schemas/teams_schema.json"),
 
     )
