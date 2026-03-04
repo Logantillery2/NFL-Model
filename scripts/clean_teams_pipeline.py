@@ -141,6 +141,6 @@ if __name__ == "__main__":
     run_pipeline(
         raw_path=Path("data/raw/teams_raw.csv"),
         out_dir=Path("data"),
-        schema_path=Path("schemas/teams_schema.json"),
+        schema_path=Path("teams_schema.json"),
 
     )
