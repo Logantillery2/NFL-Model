@@ -1,0 +1,39 @@
+{
+  "required_columns": [
+    "game_id",
+    "date",
+    "team_id",
+    "opponent_id",
+    "is_home",
+    "team_score",
+    "opponent_score"
+  ],
+  "non_nullable": [
+    "game_id",
+    "date",
+    "team_id",
+    "opponent_id",
+    "is_home",
+    "team_score",
+    "opponent_score"
+  ],
+  "numeric_columns": [
+    "game_id",
+    "team_id",
+    "opponent_id",
+    "is_home",
+    "team_score",
+    "opponent_score",
+    "venue_id",
+    "season",
+    "seasontype"
+  ],
+  "date_columns": [
+    "date"
+  ],
+  "dedupe_subset": [
+    "game_id",
+    "team_id"
+  ],
+  "output_filename": "scoreboard_clean.csv"
+}

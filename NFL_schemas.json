@@ -1,0 +1,21 @@
+{
+  "required_columns": [
+    "game_id",
+    "date",
+    "team_id",
+    "opponent_id",
+    "is_home",
+    "team_score",
+    "opponent_score",
+    "venue_id"
+  ],
+  "non_nullable": [
+    "game_id",
+    "date",
+    "team_id",
+    "opponent_id",
+    "is_home",
+    "team_score",
+    "opponent_score"
+  ]
+}

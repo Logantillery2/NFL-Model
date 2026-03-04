@@ -1,0 +1,18 @@
+{
+  "required_columns": [
+    "team_id",
+    "team_name"
+  ],
+  "non_nullable": [
+    "team_id",
+    "team_name"
+  ],
+  "numeric_columns": [
+    "team_id"
+  ],
+  "date_columns": [],
+  "dedupe_subset": [
+    "team_id"
+  ],
+  "output_filename": "teams_clean.csv"
+}

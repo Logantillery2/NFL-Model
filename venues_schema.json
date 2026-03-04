@@ -1,0 +1,21 @@
+{
+  "required_columns": [
+    "venue_id",
+    "venue_name"
+  ],
+  "non_nullable": [
+    "venue_id",
+    "venue_name"
+  ],
+  "numeric_columns": [
+    "venue_id",
+    "venue_capacity",
+    "venue_lat",
+    "venue_lon"
+  ],
+  "date_columns": [],
+  "dedupe_subset": [
+    "venue_id"
+  ],
+  "output_filename": "venues_clean.csv"
+}
