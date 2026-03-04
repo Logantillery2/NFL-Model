@@ -24,7 +24,7 @@ jobs:
           python pipeline.py
 
           - name: Upload cleaned dataset
-  uses: actions/upload-artifact@v4
-  with:
-    name: cleaned-data
-    path: data/unified/nfl_unified.csv
+          uses: actions/upload-artifact@v4
+          with:
+          name: cleaned-data
+          path: data/unified/nfl_unified.csv
