@@ -4,9 +4,19 @@ import subprocess
 import sys
 
 
-def run(cmd: list[str]) -> None:
+REPO_ROOT = Path(__file__).resolve().parent
+
+def run(cmd):
     print("\n>>", " ".join(cmd))
-    subprocess.run(cmd, check=True)
+    p = subprocess.run(cmd, cwd=str(REPO_ROOT), text=True, capture_output=True)
+
+    if p.stdout:
+        print("\n--- STDOUT ---\n", p.stdout)
+    if p.stderr:
+        print("\n--- STDERR ---\n", p.stderr)
+
+    if p.returncode != 0:
+        raise SystemExit(p.returncode)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -35,4 +45,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
     
