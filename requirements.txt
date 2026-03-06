@@ -2,4 +2,5 @@ pandas
 requests
 requests-cache
 matplotlib
+streamlit
 scipy
